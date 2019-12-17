@@ -1,0 +1,32 @@
+#title .wrap {
+	background: url('../img/titleBG.jpg') center no-repeat;
+	background-size: cover;
+}
+#title .row {height: 568px;}
+#title h1 {
+	font-size: 50px;
+	line-height: 85px;
+	margin: 0 0 30px;
+}
+#title .separator {	
+	width: 250px;
+	height: 2px;
+}
+#title .dash {background: #fff;}
+#title p {
+	margin: 30px 0;
+	font-size: 20px;
+}
+#title button {	background: #151d25;}
+#title #tBut {color: #fff;}
+
+/*responsive*/
+@media only screen and (max-width: 1999px) {
+	#title .xsmMiss {display: none;}
+} 
+@media only screen and (max-width: 768px) {
+	#title h1 {font-size: 25px;}
+}
+@media only screen and (min-width: 768px) {
+	#title p br {display: none;}
+}

@@ -1,0 +1,120 @@
+/*animations*/
+@keyframes	bg1 {
+	0% {background: #fff;}
+	50% {background: #f60e0e;}
+	75% {background:#34e33b;}
+	100% {background: #fff;}
+}
+@keyframes	bg2 {
+	0% {background: #34e33b;}
+	50% {background: #fff;}
+	75% {background: #f60e0e;}
+	100% {background: #34e33b;}
+}
+@keyframes	bg3 {
+	0% {background: #f60e0e;}
+	50% {background: #34e33b;}
+	75% {background: #fff;}
+	100% {background: #f60e0e;}
+}
+
+/*css*/
+header .wrap{
+	background: rgba(21,29,37,0.5);	
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	z-index: 500;
+}
+header .row {height: 100px;}
+header a#logo {
+	display: block;
+	border-radius: 50%;
+	height: 68px;
+	width: 68px;
+	padding-top: 5px; 
+}
+header figure {
+	width: 100px; 
+	text-align: center;
+}
+header #logo {	border-radius: 50%;}
+header nav li {float: left;}
+header nav a:hover,
+header nav a:focus,
+header nav a:visited,
+header nav a {
+	color: #fff;
+	text-transform: uppercase;
+}
+header nav ul:first-child li {
+	margin-right: 5px;
+}
+header nav ul:nth-child(2) li {
+	position: relative;
+	margin-right: 30px;
+}
+header #hMenuIcon {
+	height: 50px;
+	width: 50px;
+	border: 2px solid #fff;
+	position: relative;
+	margin-right: 15px;
+	cursor: pointer;
+}
+header .hBar {
+	height: 8px;
+	width: 30px;
+	background: #fff;
+	margin: 5px 0;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+header #bar1.animation { animation-name: bg1;}
+header #bar2.animation { animation-name: bg2;}
+header #bar3.animation { animation-name: bg3;}
+
+/*responsive*/
+
+@media only screen and (min-width: 768px) {
+	header #hClose,
+  	header #hMenu,
+	header #hMenuIcon {display: none;}
+} 
+@media only screen and (max-width: 768px) {
+  	header #hClose,
+  	header #hMenu,
+  	header #bNav {display: none;}
+  	header #hMenu li {
+	  	float: none;
+	  	margin: 10px 0;
+	}
+	header #lo.open {
+		top: 25%;
+		transform: translateY(0);
+	}
+	header #hClose {
+		height: 50px;
+		width: 50px;
+		border: 2px solid #fff;
+		cursor: pointer;
+	}
+	header .hBar1 {
+		height: 5px;
+		width: 30px;
+		background: #fff;
+	}
+	header #hCB1 {
+		transform: rotate(45deg);
+	    right: 7px;
+	    position: relative;
+	    top: 20px;
+	}
+	header #hCB2 {
+		transform: rotate(135deg);
+	    right: 7px;
+	    position: relative;
+	    top: 15px;
+	}
+}

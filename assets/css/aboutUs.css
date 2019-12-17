@@ -1,0 +1,65 @@
+#aboutUs {
+	z-index: 200;
+	display: none;
+}
+
+#aboutUs img {
+	height: auto;
+	width: 100%;
+}
+#aboutUs #imgAus {padding-right: 0;}
+#aboutUs #aUsContent {
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 100px;
+	width: 41.66666667%;
+	height: 100%;
+	padding: 0 30px 30px 30px; 
+}
+#aboutUs h2,
+#aboutUs p  {
+	color: #28374b;
+	margin: 15px 0 15px;
+	text-align: justify;
+}
+#aboutUs .dash {background: #9fb0a5;}
+#aboutUs #aUsContent img {display: none;}
+#aboutUs button {	background: #151d25;}
+#aboutUs a {	color: #fff;}
+#aboutUs span {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+
+/*responsive*/
+@media only screen and  (max-width: 767px) {
+	#aboutUs {height: 750px;}
+	#aboutUs .wrap {margin: 0;}
+	#aboutUs .xsmMiss {display: none;}
+	#aboutUs #aUsContent {
+		width: 100%;
+		right: 0px;
+		position: absolute;
+		top: 0;
+	}
+	#aboutUs #imgAus {display: none;}
+	#aboutUs #aUsContent img {
+		display: block;
+		max-height: 450px; 
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	#aboutUs .wrap {margin-top: 0;}
+	#aboutUs .xsmMiss {display: none;}
+	#aboutUs #aUsContent {
+		width: 50%;
+		right: 0px;
+	}
+	#aboutUs #aUsContent img {display: none;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+	#aboutUs p {font-size: 16px;}
+}

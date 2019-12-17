@@ -1,0 +1,18 @@
+#careers {margin-bottom: 100px;}
+#careers .row:first-child {background: #1ad7c5;}
+#careers h2,
+#careers h3 {margin: 30px 0 10px;}
+#careers h3 {font-size: 25px;}
+#careers ol {height: 300px;}
+#careers .col-lg-4 {
+	border: 5px solid #fff;
+	background: #1ad7c5;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px) {	
+		#careers .col-sm-3 {display: none;}	
+		#careers ol {height: auto;}
+}
+@media only screen and (min-width: 992px) (max-width: 1199px) {	#careers .col-sm-3 {display: none;}	}
+@media only screen and (max-width: 1199px) {}

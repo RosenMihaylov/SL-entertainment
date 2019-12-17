@@ -1,0 +1,39 @@
+#services {margin-bottom: 30px;}
+#services .col-lg-3,
+#services .col-lg-4 {
+	height: 600px;
+	margin: 20px 0 10px;
+}
+#services .row {margin: 0 }
+#services .row:not(:last-child) img {
+	width: 100%;
+	height: auto;
+}
+#services .big {
+	padding: 5px;
+	background: #9fb0a5;
+	border-right: 7.5px solid #fff;
+	border-left: 7.5px solid #fff;
+}
+#services .col-lg-3 h2,
+#services .col-lg-4 h2 {
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+#services h3 {
+	font-size: 22px;
+	margin-top: 5px;
+}
+#services .row h2 {margin-top: 30px;}
+#services .row #arrow {height: 32px; width: 32px;}
+#show img {
+	width: 100%;
+	height: auto;
+}
+#show {display: none;}
+
+/*responsive*/
+@media only screen and  (max-width: 767px) {
+	#services .col-lg-3,
+	#services .col-lg-4 {height: auto;}
+}

@@ -1,0 +1,71 @@
+/*gemeral*/
+.b-box { box-sizing: border-box;}
+.wrap > .container-fluid {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+img {object-fit: cover;}
+
+/*menu*/
+.menu li {float: left;}
+ol li {
+	font-size: 18px;
+	margin-left: 20px;
+	list-style: decimal;;
+}
+.flL:after,
+.flR:after,
+.menu li:after {
+	display: block;
+	clear: both;
+	content: none;
+}
+
+/*allignment*/
+.pR {position: relative;}
+.pA {position: absolute;}
+.vAM {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.hAM {
+	left: 50%;
+	transform: translateX(-50%);	
+}
+.flL {float: left;}
+.flR {float: right;}
+
+/*text*/
+.tAC {text-align: center;}
+.tUp {text-transform: uppercase;}
+.cW {color: #fff;}
+.fontMR {font-family: 'montserratregular';}
+.fontLTR {font-family: 'LobsterTwo';}
+
+/*elements*/
+a,
+a:focus,
+a:visited,
+a:hover {
+	text-decoration: none;
+	outline: none;
+}
+.separator {height: 1px;}
+.dash {
+	height: 2px;
+	width: 10px;
+	float: left;
+} 
+.dash:not(:last-child) {margin-right: 30px;}
+button {
+	height: 40px;
+	width: 175px;
+	text-align: center;
+	font-family: 'montserratregular';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+h1, h2,h3, h4, h5, h6 {font-family: 'LobsterTwo';}
+a,p,li,span {font-family: 'montserratregular';}
+h2 {font-size: 30px;}
+p {font-size: 20px;}
